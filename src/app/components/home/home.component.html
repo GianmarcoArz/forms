@@ -1,0 +1,72 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col px-5 py-3">
+      <form [formGroup]="form" class="d-flex flex-column gap-3">
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="inserisci il tuo nome"
+            formControlName="nome"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="inserisci il tuo cognome"
+            formControlName="cognome"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="inserisci la password"
+            formControlName="password"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="conferma la password"
+            formControlName="confermaPassword"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <select formControlName="genere" class="form-select">
+            <option value="uomo">Uomo</option>
+            <option value="uomo">Donna</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input
+            type="file"
+            placeholder="inserisci fule img"
+            formControlName="ImmagineProfilo"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            placeholder="inserisci una tua Biografia"
+            formControlName="biografia"
+            class="form-control"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="username"
+            formControlName="username"
+            class="form-control"
+          />
+        </div>
+        <button (click)="sand()" class="btn btn-primary">invia</button>
+      </form>
+    </div>
+  </div>
+</div>
