@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col px-5 py-3">
+      <form>
+        <div>
+          <input
+            type="text"
+            placeholder="username"
+            [(ngModel)]="user.username"
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder="password"
+            [(ngModel)]="user.password"
+          />
+        </div>
+        {{ user.username }}
+      </form>
+    </div>
+  </div>
+</div>
